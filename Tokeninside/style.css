@@ -95,3 +95,13 @@
 a{
   text-decoration: none;
 }
+.graphic{
+  position: relative;
+  top: -20px;
+  right: -15px;
+}
+.blog{
+  position: relative;
+  top: -15px;
+  right: -20px;
+}
