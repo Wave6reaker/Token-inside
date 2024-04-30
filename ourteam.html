@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <meta name="description" content="">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Наша команда - Token inside</title>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) {
+                if (document.scripts[j].src === r) {
+                    return;
+                }
+            }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(97031459, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/97031459" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="check2" viewBox="0 0 16 16">
+            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+        </symbol>
+        <symbol id="circle-half" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+        </symbol>
+        <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+        </symbol>
+        <symbol id="sun-fill" viewBox="0 0 16 16">
+            <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+        </symbol>
+    </svg>
+
+    <!-- Inicio Toggle modo dark -->
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+        <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+            <svg class="bi my-1 theme-icon-active" width="1em" height="1em">
+                <use href="#circle-half"></use>
+            </svg>
+            <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#sun-fill"></use>
+                    </svg>
+                    Светлая тема
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#moon-stars-fill"></use>
+                    </svg>
+                    Темная тема
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+            <li>
+                <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                    <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
+                        <use href="#circle-half"></use>
+                    </svg>
+                    Система
+                    <svg class="bi ms-auto d-none" width="1em" height="1em">
+                        <use href="#check2"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+    <main>
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <span class="fs-4">Token inside</span>
+                </a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis">Конвертировать монеты</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis">Наша команда</a></li>
+                    <div class="dropdown">
+                        <button class="btn btn-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+                                <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z" />
+                                <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31" />
+                            </svg>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Русский</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </header>
+        </div>
+
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h1 class="text-body-emphasis">Наша команда</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-5 g-3" data-bs-toggle="modal" data-bs-target="#sergei">
+                <div class="col">
+                    <div class="card bg-body-tertiary">
+                        <img src="images/sergei.png" class="card-img-top" alt="sergei">
+                        <div class="card-body">
+                            <h5 class="card-title text-body-emphasis">Сергей Коробков</h5>
+                            <p class="card-text ">Team-Lead</p>
+                        </div>
+                        <div class="modal fade" id="sergei" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Сергей Коробков</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-body-emphasis">
+                                        В роли тимлида на криптобирже я стал архитектором, соратником и вдохновителем для команды из трех разработчиков и тестировщика. Мы вместе совершенствовали наш продукт, учитывая как сложности криптовалютного рынка, так и потребности наших пользователей.<br><br>
+                                        Моя роль включала в себя координацию работы команды, распределение задач, и обеспечение прозрачности в процессе разработки. Я стремился создать атмосферу взаимовыручки и открытого общения, чтобы каждый член команды мог вносить свой вклад и чувствовать себя ценным участником процесса.<br><br>
+                                        Мы активно взаимодействовали с другими отделами компании, такими как дизайн и продуктовый менеджмент, чтобы гармонично интегрировать разработанные функции и обеспечить соответствие нашего продукта стратегическим целям компании.<br><br>
+                                        Наши ежедневные стендапы помогали нам отслеживать прогресс и решать возникающие проблемы оперативно, а регулярные ретроспективы позволяли нам постоянно совершенствовать наш процесс работы и повышать эффективность команды.<br><br>
+                                        Было важно не только разрабатывать новый функционал, но и обеспечивать его высокое качество. В этом нам помогал наш тестировщик, который проводил тщательное тестирование продукта и помогал выявлять и устранять даже самые мелкие дефекты.<br><br>
+                                        В итоге, благодаря упорному труду и совместным усилиям нашей команды, мы достигали поставленных целей и создавали продукт, который приносил пользу и удовлетворение нашим пользователям в мире криптовалютных технологий.<br><br>
+                                        Мои контакты:<br><br>
+                                        <a href="https://github.com/Wave6reaker" target="_blank"><button type="button" class="btn btn-primary">Github</button></a><a href="https://www.behance.net/WaveBreaker" target="_blank"><button type="button" class="btn btn-primary">Behance</button></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary" data-bs-toggle="modal" data-bs-target="#gismat">
+                        <img src="images/gismat.png" class="card-img-top" alt="gismat">
+                        <div class="card-body">
+                            <h5 class="card-title text-body-emphasis">Гисмат Агаев</h5>
+                            <p class="card-text">Frontend Developer</p>
+                        </div>
+                        <div class="modal fade" id="gismat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Гисмат Агаев</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-body-emphasis">
+                                        Когда я работал фронтенд-разработчиком на криптобирже, моя задача состояла в создании пользовательских интерфейсов, которые не только эффективно отображали данные о криптовалютах, но и предоставляли пользователям интуитивно понятный и привлекательный опыт использования.<br><br>
+                                        Я активно участвовал в проектировании и разработке новых функций и возможностей платформы, учитывая специфику криптовалютного рынка и требования наших пользователей. Моя работа включала создание адаптивных и кросс-браузерных интерфейсов, чтобы обеспечить одинаково высокий уровень пользовательского опыта на всех устройствах и во всех браузерах.<br><br>
+                                        Кроме того, я постоянно улучшал процесс разработки, внедряя новые технологии и инструменты, которые помогали ускорить развертывание и повысить качество нашего фронтенд-кода. Мы также тесно сотрудничали с дизайнерами и бэкенд-разработчиками, чтобы обеспечить гармоничное взаимодействие всех компонентов нашей платформы.<br><br>
+                                        В итоге, моя работа помогала создавать современные и инновационные пользовательские интерфейсы, которые делали использование криптобиржи более удобным и эффективным для всех наших пользователей.<br><br>
+                                        Мои контакты:<br><br>
+                                        <a href="#" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card bg-body-tertiary" data-bs-toggle="modal" data-bs-target="#andrey">
+                        <img src="images/andrey.png" class="card-img-top" alt="andrey">
+                        <div class="card-body">
+                            <h5 class="card-title text-body-emphasis">Андрей Разин</h5>
+                            <p class="card-text">Frontend Developer</p>
+                        </div>
+                        <div class="modal fade" id="andrey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Андрей Разин</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-body-emphasis">
+                                        Когда я работал разработчиком на криптобирже, моя роль заключалась в создании и поддержке функциональности, которая была ключевой для пользователей нашей платформы. Я участвовал в разработке новых функций, исправлении ошибок и оптимизации производительности нашего программного обеспечения.<br><br>
+                                        Моя задача включала в себя как фронтендные, так и бэкендные аспекты разработки. Я работал над реализацией новых возможностей интерфейса пользователя, а также над разработкой и оптимизацией бэкендной логики, обеспечивая безопасность и эффективность нашей платформы.<br><br>
+                                        Кроме того, я активно участвовал в код-ревью и тестировании кода, чтобы гарантировать его качество и соответствие стандартам разработки. Мы постоянно стремились к улучшению процессов разработки и внедряли новые методики и инструменты, чтобы ускорить разработку и повысить стабильность нашего программного обеспечения.<br><br>
+                                        Моя работа на криптобирже была не только технической, но и стратегической. Мы постоянно анализировали рыночные тренды и потребности пользователей, чтобы создавать продукт, который соответствовал их ожиданиям и оставался конкурентоспособным в быстро изменяющемся мире криптовалют.<br><br>
+                                        Мои контакты:<br><br>
+                                        <a href="https://github.com/Andrey8Meteor" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-body-tertiary" data-bs-toggle="modal" data-bs-target="#mumin">
+                        <img src="images/mumin.png" class="card-img-top" alt="mumin">
+                        <div class="card-body">
+                            <h5 class="card-title text-body-emphasis">Атахонов Иномджон</h5>
+                            <p class="card-text">Fullstack Developer</p>
+                        </div>
+                        <div class="modal fade" id="mumin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Атахонов Иномджон</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-body-emphasis">
+                                        Когда я работал фуллстек разработчиком на криптобирже, моя задача заключалась в создании и поддержке полного стека технологий, необходимых для функционирования нашей платформы. Это включало в себя как фронтендную разработку интерфейсов пользователя, так и бэкендную логику, обеспечивающую обработку запросов пользователей и взаимодействие с базой данных.<br><br>
+                                        Моя работа начиналась с анализа требований и проектирования архитектуры системы. Я разрабатывал и реализовывал новые функции и возможности, учитывая как потребности пользователей, так и особенности криптовалютного рынка. Мы постоянно стремились к улучшению пользовательского опыта и расширению функциональности платформы, чтобы быть на передовой в индустрии.<br><br>
+                                        Кроме того, я занимался оптимизацией производительности и безопасности нашей платформы. Это включало в себя оптимизацию кода, обеспечение защиты от внешних угроз и масштабируемость системы, чтобы обеспечить ее надежную работу даже при высокой нагрузке.<br><br>
+                                        Моя работа требовала не только технических навыков, но и способности эффективно коммуницировать с другими членами команды, включая дизайнеров, тестировщиков и менеджеров продукта. Только благодаря нашему совместному усилию мы могли достигать наших целей и создавать продукт, который был востребован и любим нашими пользователями в мире криптовалютных технологий.<br><br>
+                                        Мои контакты:<br><br>
+                                        <a href="https://github.com/Stonn3" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-body-tertiary" data-bs-toggle="modal" data-bs-target="#oleg">
+                        <img src="images/oleg.png" class="card-img-top" alt="oleg">
+                        <div class="card-body">
+                            <h5 class="card-title text-body-emphasis">Олег Бабкин</h5>
+                            <p class="card-text">QA Tester</p>
+                        </div>
+                        <div class="modal fade" id="oleg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Олег Бабкин</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body text-body-emphasis">
+                                        Когда я работал QA тестировщиком в криптобирже, моя основная задача заключалась в обеспечении надежности и безопасности нашей торговой платформы для пользователей. Я активно участвовал в тестировании новых функций и обновлений, проводя тщательные проверки на соответствие требованиям, корректность работы и отсутствие ошибок.<br><br>
+                                        Моя работа включала в себя разработку тестовых сценариев, тест-кейсов и автоматизированных тестов для различных компонентов платформы, включая интерфейсы пользователя, бэкендную логику и систему безопасности. Я также проводил регрессионное тестирование, чтобы убедиться, что изменения не повлияли на уже существующий функционал.<br><br>
+                                        В тесном сотрудничестве с разработчиками и другими членами команды мы регулярно обсуждали результаты тестирования, обнаруженные проблемы и способы их устранения. Я стремился к постоянному улучшению процессов тестирования и внедрению новых методов, чтобы повысить эффективность и качество нашего продукта.<br><br>
+                                        Моя работа была неотъемлемой частью процесса разработки на криптобирже, помогая обеспечить стабильность и надежность нашей платформы в динамичном мире криптовалютных технологий.<br><br>
+                                        Мои контакты:<br><br>
+                                        <a href="https://github.com/NaronPNG" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <footer class="py-3 my-4 ">
+                <p class="text-center">
+                    <a href="#">Наверх</a>
+                </p>
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis">Главная</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis">Конвертор</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-emphasis">FAQ</a></li>
+                    <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis">Политика конфиденциальности</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis">Связь с нами</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">&copy; 2024 Token inside</p>
+            </footer>
+        </div>
+
+    </main>
+</body>
+
+<script src="js/scroll.js"></script>
+<script src="js/theme.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
