@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <meta name="description" content="">
+    <meta name="description" content="Token inside - Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +64,7 @@
         </symbol>
     </svg>
 
+    
     <!-- Inicio Toggle modo dark -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -78,7 +79,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#sun-fill"></use>
                     </svg>
-                    Светлая тема
+                    <span class="lang" key="light theme">Светлая тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -89,7 +90,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#moon-stars-fill"></use>
                     </svg>
-                    Темная тема
+                    <span class="lang" key="dark theme">Темная тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -100,7 +101,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#circle-half"></use>
                     </svg>
-                    Система
+                    <span class="lang" key="system">Система</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -108,8 +109,11 @@
             </li>
         </ul>
     </div>
+    
+    
 
     <main>
+        
         <div class="container animate__fadeIn animate__animated">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
 
@@ -117,10 +121,10 @@
                     <span class="fs-4">Token inside</span>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis">Курс монет</a></li>
-                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis">Конвертировать монеты</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis">Блог</a></li>
-                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis lang" key="coin exchange">Конвертировать монеты</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis lang" key="blog">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis lang" key="our team">Наша команда</a></li>
                     <div class="dropdown">
                         <button class="btn btn-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
@@ -129,8 +133,8 @@
                             </svg>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Русский</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li class="header-item-lang-ru"><a class="dropdown-item translate" id="ru" href="#">Русский</a></li>
+                            <li class="header-item-lang-en"><a class="dropdown-item translate" id="en" href="#">English</a></li>
                         </ul>
                     </div>
 
@@ -139,17 +143,17 @@
         </div>
 
 
-        <div class="container my-3 bg-body-tertiary rounded-5 animate__fadeIn animate__animated">
+        <div class="container my-3 bg-body-tertiary rounded-5">
             <div class="row p-2 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-5 border">
-                <div class="col-lg-7 p-3 p-lg-5 pt-lg-2">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Просмотр курса криптовалют</h1>
-                    <p>Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.</p>
-                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                        <a href="coinrate.html"><button type="button" class="btn btn-primary btn-lg px-4">Курс монет</button></a>
-                        <a href="coinexchange.html"><button type="button" class="btn btn-primary btn-lg px-4">Конвертировать монеты</button></a>
+                <div class="col-lg-7 p-3 p-lg-5 pt-lg-2 ">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis animate__fadeIn animate__animated lang" key="view cryptocurrency rates">Просмотр курса криптовалют</h1>
+                    <p class="animate__fadeIn animate__animated lang" key="view text">Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-start animate__fadeIn animate__animated">
+                        <a href="coinrate.html"><button type="button" class="btn btn-primary btn-lg px-4"><span class="lang" key="coin rate">Курс монет</span></button></a>
+                        <a href="coinexchange.html"><button type="button" class="btn btn-primary btn-lg px-4"><span class="lang" key="coin exchange">Конвертировать монеты</span></button></a>
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden animate__fadeIn animate__animated">
                     <img class="rounded-lg-3 graphic" src="images/graphic.png" alt="graphic" width="300">
                 </div>
             </div>
@@ -161,17 +165,17 @@
                 <div class="col-md-6">
                     <div class="h-100 p-5 bg-body-tertiary border rounded-5">
                         <img class="rounded-lg-3" src="images/kyrs.png" alt="kyrs" width="250">
-                        <h2 class="text-body-emphasis">Курс монет</h2>
-                        <p>Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.</p>
-                        <a href="coinrate.html"><button class="btn btn-primary btn-lg px-4" type="button">Перейти</button></a>
+                        <h2 class="text-body-emphasis lang" key="coin rate">Курс монет</h2>
+                        <p class="lang" key="coin rate text">Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.</p>
+                        <a href="coinrate.html"><button class="btn btn-primary btn-lg px-4" type="button"><span class="lang" key="go">Перейти</span></button></a>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="h-100 p-5 bg-body-tertiary border rounded-5">
                         <img class="rounded-lg-3" src="images/obmen.png" alt="obmen" width="250">
-                        <h2 class="text-body-emphasis">Обмен монет</h2>
-                        <p>Обмен монет - это важная часть мира криптовалют. На нашем крипто сервисе мы стремимся предоставить удобный и безопасный способ обмена различных монет.</p>
-                        <a href="coinexchange.html"><button class="btn btn-primary btn-lg px-4" type="button">Перейти</button></a>
+                        <h2 class="text-body-emphasis lang" key="coin exchange">Обмен монет</h2>
+                        <p class="lang" key="coin exchange text">Обмен монет - это важная часть мира криптовалют. На нашем крипто сервисе мы стремимся предоставить удобный и безопасный способ обмена различных монет.</p>
+                        <a href="coinexchange.html"><button class="btn btn-primary btn-lg px-4" type="button"><span class="lang" key="go">Перейти</span></button></a>
                     </div>
                 </div>
             </div>
@@ -181,10 +185,10 @@
         <div class="container my-3 bg-body-tertiary rounded-5 animate__fadeIn animate__animated">
             <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-5 border">
                 <div class="col-lg-7 p-3 p-lg-5 pt-lg-2">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Наш блог</h1>
-                    <p>Наш блог предлагает уникальные и интересные статьи о мире криптовалют и блокчейна. Узнайте о последних трендах, новостях и развитии в этой захватывающей сфере.</p>
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis lang" key="our blog">Наш блог</h1>
+                    <p class="lang" key="blog text">Наш блог предлагает уникальные и интересные статьи о мире криптовалют и блокчейна. Узнайте о последних трендах, новостях и развитии в этой захватывающей сфере.</p>
                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-start">
-                        <a href="blog.html"><button type="button" class="btn btn-primary btn-lg px-4">Читать</button></a>
+                        <a href="blog.html"><button type="button" class="btn btn-primary btn-lg px-4"><span class="lang" key="read">Читать</span></button></a>
                     </div>
                 </div>
                 <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden ">
@@ -196,27 +200,32 @@
         <div class="container animate__fadeIn animate__animated">
             <footer class="py-3 my-4">
                 <p class="text-center">
-                    <a href="#">Наверх</a>
+                    <a href="#" class="lang" key="top">Наверх</a>
                 </p>
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis ">Главная</a></li>
-                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis">Курс монет</a></li>
-                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis">Конвертор</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis">Блог</a></li>
-                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis lang" key="home">Главная</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis lang" key="coin exchange">Конвертор</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis lang" key="blog">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis lang" key="our team">Наша команда</a></li>
                     <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-emphasis">FAQ</a></li>
-                    <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis">Политика конфиденциальности</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis">Связь с нами</a></li>
+                    <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis lang" key="privacy policy">Политика конфиденциальности</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis lang" key="contact us">Связь с нами</a></li>
                 </ul>
                 <p class="text-center text-body-secondary">&copy; 2024 Token inside</p>
             </footer>
         </div>
     </main>
+    <div id="cb-cookie-banner" class="alert alert-light text-center mb-0 link-body-emphasis text-decoration-none fixed-bottom" role="alert">
+        <span class="lang" key="cookie text">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.</span>
+        <a class="lang" key="cookie a" href="Privacy Policy.html" target="_blank">Узнать больше</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()"><span class="lang" key="cookie btn">Окей</span></button>
+    </div>
 </body>
 
-
+<script src="js/cookie.js"></script>
 <script src="js/main.js"></script>
-
+<script src="js/translate.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/theme.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

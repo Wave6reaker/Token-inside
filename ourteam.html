@@ -64,6 +64,7 @@
         </symbol>
     </svg>
 
+    
     <!-- Inicio Toggle modo dark -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -78,7 +79,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#sun-fill"></use>
                     </svg>
-                    Светлая тема
+                    <span class="lang" key="light theme">Светлая тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -89,7 +90,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#moon-stars-fill"></use>
                     </svg>
-                    Темная тема
+                    <span class="lang" key="dark theme">Темная тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -100,7 +101,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#circle-half"></use>
                     </svg>
-                    Система
+                    <span class="lang" key="system">Система</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -108,17 +109,22 @@
             </li>
         </ul>
     </div>
+    
+    
+
     <main>
-        <div class="container animate__fadeIn animate__animated">
+        
+        <div class="container ">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+
                 <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Token inside</span>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis">Курс монет</a></li>
-                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis">Конвертировать монеты</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis">Блог</a></li>
-                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis lang" key="coin exchange">Конвертировать монеты</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis lang" key="blog">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis lang" key="our team">Наша команда</a></li>
                     <div class="dropdown">
                         <button class="btn btn-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
@@ -127,10 +133,11 @@
                             </svg>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Русский</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li class="header-item-lang-ru"><a class="dropdown-item translate" id="ru" href="#">Русский</a></li>
+                            <li class="header-item-lang-en"><a class="dropdown-item translate" id="en" href="#">English</a></li>
                         </ul>
                     </div>
+
                 </ul>
             </header>
         </div>
@@ -138,7 +145,7 @@
         <div class="container my-3 animate__fadeIn animate__animated">
             <div class="row">
                 <div class="col-md-6 mx-auto text-center">
-                    <h1 class="text-body-emphasis">Наша команда</h1>
+                    <h1 class="text-body-emphasis lang" key="our team">Наша команда</h1>
                 </div>
             </div>
         </div>
@@ -149,17 +156,17 @@
                     <div class="card bg-body-tertiary rounded-5">
                         <img src="images/sergei.png" class="card-img-top animate__fadeIn animate__animated" alt="sergei">
                         <div class="card-body animate__fadeIn animate__animated">
-                            <h5 class="card-title text-body-emphasis">Сергей Коробков</h5>
+                            <h5 class="card-title text-body-emphasis lang" key="sergei">Сергей Коробков</h5>
                             <p class="card-text ">Team-Lead</p>
                         </div>
                         <div class="modal fade" id="sergei" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Сергей Коробков</h1>
+                                        <h1 class="modal-title fs-5 text-body-emphasis lang" id="exampleModalLabel" key="sergei">Сергей Коробков</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-body-emphasis">
+                                    <div class="modal-body text-body-emphasis lang" key="sergei text">
                                         В роли тимлида на криптобирже я стал архитектором, соратником и вдохновителем для команды из трех разработчиков и тестировщика. Мы вместе совершенствовали наш продукт, учитывая как сложности криптовалютного рынка, так и потребности наших пользователей.<br><br>
                                         Моя роль включала в себя координацию работы команды, распределение задач, и обеспечение прозрачности в процессе разработки. Я стремился создать атмосферу взаимовыручки и открытого общения, чтобы каждый член команды мог вносить свой вклад и чувствовать себя ценным участником процесса.<br><br>
                                         Мы активно взаимодействовали с другими отделами компании, такими как дизайн и продуктовый менеджмент, чтобы гармонично интегрировать разработанные функции и обеспечить соответствие нашего продукта стратегическим целям компании.<br><br>
@@ -170,7 +177,7 @@
                                         <a href="https://github.com/Wave6reaker" target="_blank"><button type="button" class="btn btn-primary">Github</button></a><a href="https://www.behance.net/WaveBreaker" target="_blank"><button type="button" class="btn btn-primary">Behance</button></a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="lang" key="close">Закрыть</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -182,17 +189,17 @@
                     <div class="card bg-body-tertiary rounded-5" data-bs-toggle="modal" data-bs-target="#gismat">
                         <img src="images/gismat.png" class="card-img-top animate__fadeIn animate__animated" alt="gismat">
                         <div class="card-body animate__fadeIn animate__animated">
-                            <h5 class="card-title text-body-emphasis">Гисмат Агаев</h5>
+                            <h5 class="card-title text-body-emphasis lang" key="gismat">Гисмат Агаев</h5>
                             <p class="card-text">Frontend Developer</p>
                         </div>
                         <div class="modal fade" id="gismat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Гисмат Агаев</h1>
+                                        <h1 class="modal-title fs-5 text-body-emphasis lang" id="exampleModalLabel" key="gismat">Гисмат Агаев</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-body-emphasis">
+                                    <div class="modal-body text-body-emphasis lang" key="gismat text">
                                         Когда я работал фронтенд-разработчиком на криптобирже, моя задача состояла в создании пользовательских интерфейсов, которые не только эффективно отображали данные о криптовалютах, но и предоставляли пользователям интуитивно понятный и привлекательный опыт использования.<br><br>
                                         Я активно участвовал в проектировании и разработке новых функций и возможностей платформы, учитывая специфику криптовалютного рынка и требования наших пользователей. Моя работа включала создание адаптивных и кросс-браузерных интерфейсов, чтобы обеспечить одинаково высокий уровень пользовательского опыта на всех устройствах и во всех браузерах.<br><br>
                                         Кроме того, я постоянно улучшал процесс разработки, внедряя новые технологии и инструменты, которые помогали ускорить развертывание и повысить качество нашего фронтенд-кода. Мы также тесно сотрудничали с дизайнерами и бэкенд-разработчиками, чтобы обеспечить гармоничное взаимодействие всех компонентов нашей платформы.<br><br>
@@ -201,7 +208,7 @@
                                         <a href="#" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="lang" key="close">Закрыть</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -213,17 +220,17 @@
                     <div class="card bg-body-tertiary rounded-5" data-bs-toggle="modal" data-bs-target="#andrey">
                         <img src="images/andrey.png" class="card-img-top animate__fadeIn animate__animated" alt="andrey">
                         <div class="card-body animate__fadeIn animate__animated">
-                            <h5 class="card-title text-body-emphasis">Андрей Разин</h5>
+                            <h5 class="card-title text-body-emphasis lang" key="andrey">Андрей Разин</h5>
                             <p class="card-text">Frontend Developer</p>
                         </div>
                         <div class="modal fade" id="andrey" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Андрей Разин</h1>
+                                        <h1 class="modal-title fs-5 text-body-emphasis lang" id="exampleModalLabel" key="andrey">Андрей Разин</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-body-emphasis">
+                                    <div class="modal-body text-body-emphasis lang" key="andrey text">
                                         Когда я работал разработчиком на криптобирже, моя роль заключалась в создании и поддержке функциональности, которая была ключевой для пользователей нашей платформы. Я участвовал в разработке новых функций, исправлении ошибок и оптимизации производительности нашего программного обеспечения.<br><br>
                                         Моя задача включала в себя как фронтендные, так и бэкендные аспекты разработки. Я работал над реализацией новых возможностей интерфейса пользователя, а также над разработкой и оптимизацией бэкендной логики, обеспечивая безопасность и эффективность нашей платформы.<br><br>
                                         Кроме того, я активно участвовал в код-ревью и тестировании кода, чтобы гарантировать его качество и соответствие стандартам разработки. Мы постоянно стремились к улучшению процессов разработки и внедряли новые методики и инструменты, чтобы ускорить разработку и повысить стабильность нашего программного обеспечения.<br><br>
@@ -232,7 +239,7 @@
                                         <a href="https://github.com/Andrey8Meteor" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="lang" key="close">Закрыть</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -243,17 +250,17 @@
                     <div class="card bg-body-tertiary rounded-5" data-bs-toggle="modal" data-bs-target="#mumin">
                         <img src="images/mumin.png" class="card-img-top animate__fadeIn animate__animated" alt="mumin">
                         <div class="card-body animate__fadeIn animate__animated">
-                            <h5 class="card-title text-body-emphasis">Атахонов Иномджон</h5>
+                            <h5 class="card-title text-body-emphasis lang" key="mumin">Атахонов Иномджон</h5>
                             <p class="card-text">Fullstack Developer</p>
                         </div>
                         <div class="modal fade" id="mumin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Атахонов Иномджон</h1>
+                                        <h1 class="modal-title fs-5 text-body-emphasis lang" id="exampleModalLabel" key="mumin">Атахонов Иномджон</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-body-emphasis">
+                                    <div class="modal-body text-body-emphasis lang" key="mumin">
                                         Когда я работал фуллстек разработчиком на криптобирже, моя задача заключалась в создании и поддержке полного стека технологий, необходимых для функционирования нашей платформы. Это включало в себя как фронтендную разработку интерфейсов пользователя, так и бэкендную логику, обеспечивающую обработку запросов пользователей и взаимодействие с базой данных.<br><br>
                                         Моя работа начиналась с анализа требований и проектирования архитектуры системы. Я разрабатывал и реализовывал новые функции и возможности, учитывая как потребности пользователей, так и особенности криптовалютного рынка. Мы постоянно стремились к улучшению пользовательского опыта и расширению функциональности платформы, чтобы быть на передовой в индустрии.<br><br>
                                         Кроме того, я занимался оптимизацией производительности и безопасности нашей платформы. Это включало в себя оптимизацию кода, обеспечение защиты от внешних угроз и масштабируемость системы, чтобы обеспечить ее надежную работу даже при высокой нагрузке.<br><br>
@@ -262,7 +269,7 @@
                                         <a href="https://github.com/Stonn3" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="lang" key="close">Закрыть</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -273,17 +280,17 @@
                     <div class="card bg-body-tertiary rounded-5" data-bs-toggle="modal" data-bs-target="#oleg">
                         <img src="images/oleg.png" class="card-img-top animate__fadeIn animate__animated" alt="oleg">
                         <div class="card-body animate__fadeIn animate__animated">
-                            <h5 class="card-title text-body-emphasis">Олег Бабкин</h5>
+                            <h5 class="card-title text-body-emphasis lang" key="oleg">Олег Бабкин</h5>
                             <p class="card-text">QA Tester</p>
                         </div>
                         <div class="modal fade" id="oleg" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h1 class="modal-title fs-5 text-body-emphasis" id="exampleModalLabel">Олег Бабкин</h1>
+                                        <h1 class="modal-title fs-5 text-body-emphasis lang" id="exampleModalLabel" key="oleg">Олег Бабкин</h1>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body text-body-emphasis">
+                                    <div class="modal-body text-body-emphasis lang" key="oleg">
                                         Когда я работал QA тестировщиком в криптобирже, моя основная задача заключалась в обеспечении надежности и безопасности нашей торговой платформы для пользователей. Я активно участвовал в тестировании новых функций и обновлений, проводя тщательные проверки на соответствие требованиям, корректность работы и отсутствие ошибок.<br><br>
                                         Моя работа включала в себя разработку тестовых сценариев, тест-кейсов и автоматизированных тестов для различных компонентов платформы, включая интерфейсы пользователя, бэкендную логику и систему безопасности. Я также проводил регрессионное тестирование, чтобы убедиться, что изменения не повлияли на уже существующий функционал.<br><br>
                                         В тесном сотрудничестве с разработчиками и другими членами команды мы регулярно обсуждали результаты тестирования, обнаруженные проблемы и способы их устранения. Я стремился к постоянному улучшению процессов тестирования и внедрению новых методов, чтобы повысить эффективность и качество нашего продукта.<br><br>
@@ -292,7 +299,7 @@
                                         <a href="https://github.com/NaronPNG" target="_blank"><button type="button" class="btn btn-primary">Github</button></a>
                                     </div>
                                     <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><span class="lang" key="close">Закрыть</span></button>
                                     </div>
                                 </div>
                             </div>
@@ -304,28 +311,34 @@
 
 
         <div class="container animate__fadeIn animate__animated">
-            <footer class="py-3 my-4 ">
+            <footer class="py-3 my-4">
                 <p class="text-center">
-                    <a href="#">Наверх</a>
+                    <a href="#" class="lang" key="top">Наверх</a>
                 </p>
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis">Главная</a></li>
-                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis">Курс монет</a></li>
-                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis">Конвертор</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis">Блог</a></li>
-                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis lang" key="home">Главная</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis lang" key="coin exchange">Конвертор</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis lang" key="blog">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis lang" key="our team">Наша команда</a></li>
                     <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-emphasis">FAQ</a></li>
-                    <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis">Политика конфиденциальности</a></li>
-                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis">Связь с нами</a></li>
+                    <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis lang" key="privacy policy">Политика конфиденциальности</a></li>
+                    <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis lang" key="contact us">Связь с нами</a></li>
                 </ul>
                 <p class="text-center text-body-secondary">&copy; 2024 Token inside</p>
             </footer>
         </div>
 
     </main>
+    <div id="cb-cookie-banner" class="alert alert-light text-center mb-0 link-body-emphasis text-decoration-none fixed-bottom" role="alert">
+        <span class="lang" key="cookie text">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.</span>
+        <a class="lang" key="cookie a" href="Privacy Policy.html" target="blank">Узнать больше</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()"><span class="lang" key="cookie btn">Окей</span></button>
+    </div>
 </body>
 
-
+<script src="js/translate.js"></script>
+<script src="js/cookie.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/theme.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -136,19 +136,20 @@
                 </ul>
             </header>
         </div>
+        
 
-        <div class="container my-5 bg-body-tertiary rounded-5 animate__fadeIn animate__animated">
-            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-5 border">
+        <div class="container my-5 bg-body-tertiary rounded-5 ">
+            <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-5 border ">
                 <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Error 404</h1>
-                    <p class="lead">Такой страницы не существует</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis animate__fadeIn animate__animated">Error 404</h1>
+                    <p class="lead animate__fadeIn animate__animated">Такой страницы не существует</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 animate__fadeIn animate__animated">
                         <a href="index.html">
                             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">На главную</button>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden error">
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden error animate__fadeIn animate__animated">
                     <img class="rounded-lg-3 error" src="images/error.png" alt="error" width="300">
                 </div>
             </div>
@@ -175,13 +176,18 @@
         </div>
 
     </main>
+    <div id="cb-cookie-banner" class="alert alert-light text-center mb-0 link-body-emphasis text-decoration-none fixed-bottom" role="alert">
+        <span class="lang" key="cookie text">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.</span>
+        <a class="lang" key="cookie a" href="Privacy Policy.html" target="blank">Узнать больше</a>
+        <button type="button" class="btn btn-primary btn-sm ms-3" onclick="window.cb_hideCookieBanner()"><span class="lang" key="cookie btn">Окей</span></button>
+    </div>
 </body>
 
 
 <script src="js/main.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/theme.js"></script>
-
+<script src="js/cookie.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

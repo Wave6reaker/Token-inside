@@ -15,15 +15,91 @@ $(function() {
 
 var arrLang = {
   'en': {
-    'about': 'About Us',
-    'goods': 'Goods',
-    'benefits': 'Benefits',
-    'contact': 'Contact US',
+    'cookie text': 'This website uses cookies to ensure you get the best experience on our website.',
+    'cookie a': 'Learn more',
+    'cookie btn': 'Okay',
+
+    'light theme': 'Light theme',
+    'dark theme': 'Dark theme',
+    'system': 'System',
+
+    'coin rate': 'Coin rate',
+    'coin exchange': 'Coin exchange',
+    'blog': 'Blog',
+    'our team': 'Our team',
+    'home': 'Home',
+    'privacy policy': 'Privacy Policy',
+    'contact us': 'Contact us',
+    'top': 'Top',
+
+    'view cryptocurrency rates': 'View cryptocurrency rates',
+    'view text': 'We provide convenient tools for viewing and tracking rates of various cryptocurrencies.',
+    'coin rate text': 'We provide convenient tools for viewing and tracking rates of various cryptocurrencies.',
+    'coin exchange text': 'Coin exchange is an important part of the cryptocurrency world. On our crypto service, we strive to provide a convenient and secure way to exchange various coins.',
+    'go': 'Go',
+
+    'our blog': 'Our blog',
+    'blog text': 'Our blog offers unique and interesting articles about the world of cryptocurrencies and blockchain. Find out about the latest trends, news and developments in this exciting field.',
+    'read': 'Read',
+
+    'convert': 'Cryptocurrency converter',
+    'crypto text': "Today's cryptocurrency prices",
+
+    'sergei': 'Sergey Korobkov',
+    'gismat': 'Gismat Agayev',
+    'andrey': 'Andrey Razin',
+    'mumin': 'Atakhonov Inomjon',
+    'oleg': 'Oleg Babkin',
+    'close': 'Close',
+
+    'sergei text': 'As a team lead at a crypto exchange, I became an architect, collaborator and inspiration for a team of three developers and a tester. Together we improved our product, taking into account both the complexities of the cryptocurrency market and the needs of our users. My role included coordinating the work of the team, distributing tasks, and ensuring transparency in the development process. I strived to create an atmosphere of mutual support and open communication so that each team member could contribute and feel valued in the process. We actively collaborated with other departments of the company, such as design and product management, to harmoniously integrate the developed features and ensure that our product aligned with the strategic goals of the company. Our daily stand-ups helped us track progress and solve emerging problems quickly, and regular retrospectives allowed us to constantly improve our work process and increase the team’s efficiency. It was important not only to develop new functionality, but also to ensure its high quality. We were assisted in this by our tester, who conducted thorough testing of the product and helped identify and eliminate even the smallest defects. As a result, thanks to the hard work and joint efforts of our team, we achieved our goals and created a product that brought benefit and satisfaction to our users in world of cryptocurrency technologies. My contacts:',
+    'gismat text': 'Гисмат Агаев',
+    'andrey text': 'Андрей Разин',
+    'mumin text': 'Атахонов Иномджон',
+    'oleg text': 'Олег Бабкин',
   },
   'ru': {
-    'about': 'О нас',
-    'goods': 'Продукция',
-    'benefits': 'Преимущества',
-    'contact': 'Контакты',
+    'cookie text': 'Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.',
+    'cookie a': 'Узнать больше',
+    'cookie btn': 'Окей',
+
+    'light theme': 'Светлая тема',
+    'dark theme': 'Темная тема',
+    'system': 'Система',
+
+    'coin rate': 'Курс монет',
+    'coin exchange': 'Конвертировать монеты',
+    'blog': 'Блог',
+    'our team': 'Наша команда',
+    'home': 'Главная',
+    'privacy policy': 'Политика конфиденциальности',
+    'contact us': 'Связь с нами',
+    'top': 'Наверх',
+
+    'view cryptocurrency rates': 'Просмотр курса криптовалют',
+    'view text': 'Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.',
+    'coin rate text': 'Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют.',
+    'coin exchange text': 'Обмен монет - это важная часть мира криптовалют. На нашем крипто сервисе мы стремимся предоставить удобный и безопасный способ обмена различных монет.',
+    'go': 'Перейти',
+
+    'our blog': 'Наш блог',
+    'blog text': 'Наш блог предлагает уникальные и интересные статьи о мире криптовалют и блокчейна. Узнайте о последних трендах, новостях и развитии в этой захватывающей сфере.',
+    'read': 'Читать',
+
+    'convert': 'Конвертер криптовалют',
+    'crypto text': 'Сегодняшние цены на криптовалюту',
+
+    'sergei': 'Сергей Коробков',
+    'gismat': 'Гисмат Агаев',
+    'andrey': 'Андрей Разин',
+    'mumin': 'Атахонов Иномджон',
+    'oleg': 'Олег Бабкин',
+    'close': 'Закрыть',
+
+    'sergei text': 'В роли тимлида на криптобирже я стал архитектором, соратником и вдохновителем для команды из трех разработчиков и тестировщика. Мы вместе совершенствовали наш продукт, учитывая как сложности криптовалютного рынка, так и потребности наших пользователей.Моя роль включала в себя координацию работы команды, распределение задач, и обеспечение прозрачности в процессе разработки. Я стремился создать атмосферу взаимовыручки и открытого общения, чтобы каждый член команды мог вносить свой вклад и чувствовать себя ценным участником процесса.Мы активно взаимодействовали с другими отделами компании, такими как дизайн и продуктовый менеджмент, чтобы гармонично интегрировать разработанные функции и обеспечить соответствие нашего продукта стратегическим целям компании.Наши ежедневные стендапы помогали нам отслеживать прогресс и решать возникающие проблемы оперативно, а регулярные ретроспективы позволяли нам постоянно совершенствовать наш процесс работы и повышать эффективность команды.Было важно не только разрабатывать новый функционал, но и обеспечивать его высокое качество. В этом нам помогал наш тестировщик, который проводил тщательное тестирование продукта и помогал выявлять и устранять даже самые мелкие дефекты.В итоге, благодаря упорному труду и совместным усилиям нашей команды, мы достигали поставленных целей и создавали продукт, который приносил пользу и удовлетворение нашим пользователям в мире криптовалютных технологий.Мои контакты:',
+    'gismat text': 'Гисмат Агаев',
+    'andrey text': 'Андрей Разин',
+    'mumin text': 'Атахонов Иномджон',
+    'oleg text': 'Олег Бабкин',
   }
 }
