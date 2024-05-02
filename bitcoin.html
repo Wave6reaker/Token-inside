@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <title>Курс биткоина поднялся выше $63 тыс</title>
+    <title class="lang" key="title bitcoin">Курс биткоина поднялся выше $63 тыс</title>
 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
@@ -64,6 +64,7 @@
         </symbol>
     </svg>
 
+    
     <!-- Inicio Toggle modo dark -->
     <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
         <button class="btn btn-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
@@ -78,7 +79,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#sun-fill"></use>
                     </svg>
-                    Светлая тема
+                    <span class="lang" key="light theme">Светлая тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -89,7 +90,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#moon-stars-fill"></use>
                     </svg>
-                    Темная тема
+                    <span class="lang" key="dark theme">Темная тема</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -100,7 +101,7 @@
                     <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em">
                         <use href="#circle-half"></use>
                     </svg>
-                    Система
+                    <span class="lang" key="system">Система</span>
                     <svg class="bi ms-auto d-none" width="1em" height="1em">
                         <use href="#check2"></use>
                     </svg>
@@ -108,18 +109,22 @@
             </li>
         </ul>
     </div>
+    
+    
+
     <main>
-        <div class="container animate__fadeIn animate__animated">
+        
+        <div class="container ">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
 
                 <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                     <span class="fs-4">Token inside</span>
                 </a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis">Курс монет</a></li>
-                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis">Конвертировать монеты</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis">Блог</a></li>
-                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis">Наша команда</a></li>
+                    <li class="nav-item"><a href="coinrate.html" class="nav-link px-3 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                    <li class="nav-item"><a href="coinexchange.html" class="nav-link px-3 text-body-emphasis lang" key="coin exchange">Конвертировать монеты</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link px-3 text-body-emphasis lang" key="blog">Блог</a></li>
+                    <li class="nav-item"><a href="ourteam.html" class="nav-link px-3 text-body-emphasis lang" key="our team">Наша команда</a></li>
                     <div class="dropdown">
                         <button class="btn btn-light  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
@@ -128,10 +133,11 @@
                             </svg>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Русский</a></li>
-                            <li><a class="dropdown-item" href="#">English</a></li>
+                            <li class="header-item-lang-ru"><a class="dropdown-item translate" id="ru" href="#">Русский</a></li>
+                            <li class="header-item-lang-en"><a class="dropdown-item translate" id="en" href="#">English</a></li>
                         </ul>
                     </div>
+
                 </ul>
             </header>
         </div>
@@ -139,7 +145,7 @@
         <figure class="text-center container animate__fadeIn animate__animated">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb text-start ">
-                    <li class="breadcrumb-item"><a href="blog.html">Назад</a></li>
+                    <li class="breadcrumb-item"><a class="lang" href="blog.html" key="back">Назад</a></li>
                 </ol>
             </nav>
         </figure>
@@ -151,17 +157,18 @@
         </div>
         <div class="container my-2 animate__fadeIn animate__animated">
             <div class="p-5 bg-body-tertiary rounded-5">
-                <h3 class="text-body-emphasis text-center">Курс биткоина поднялся выше $63 тыс</h3>
+                <h3 class="text-body-emphasis text-center lang" key="bitcoin">Курс биткоина поднялся выше $63 тыс</h3>
                 <br>
                 <p class="lead text-body-emphasis">
-                    Курс биткоина (BTC) за минувшие сутки вырос на 1,6% и на 17 апреля, 10:00 мск первая криптовалюта торгуется по $63,91 тыс. при капитализации $1,25 трлн.<br><br> Вечером 16 марта, в ходе американской торговой сессии, курс биткоина опускался до $61,9 тыс., но к закрытию рынка смог немного отыграть потери. Снижение стоимости первой криптовалюты совпало с очередным оттоком средств из биржевого фонда Grayscale Bitcoin Trust (GBTC), который нивелировал приток в другие биткоин-ETF.<br><br>
-                    Согласно данным SoSoValue, за вчерашний день из GBTC было выведено почти $79,4 млн. В то же время, большинство других спотовых биткоин-ETF продемонстрировали умеренный приток средств. Лидером по притоку стал фонд iShares Bitcoin Trust, куда инвесторы вложили $25,78 млн.<br><br>
-                    Курс второй по капитализации криптовалюты — Ethereum — опускался ниже $3000 в торговые часы в США, однако к утру 17 апреля закрепился выше этой отметки. На 10:00 мск Ethereum торгуется по $3088.<br><br>
-                    Остальные крупнейшие по капитализации криптовалюты в целом повторили движение лидера — подешевели BNB от Binance, XRP от Ripple, Cardano (ADA) и Dogecoin (DOGE). Исключением стал только токен блокчейна Solana (SOL), монета за сутки прибавила в цене 3,5%, достигнув отметки $140.<br><br>
-                    Из топ-100 криптовалют по капитализации за прошедшие сутки самый крупный рост показала Akash Network (AKT) — на 13%. Сильнее других за последние 24 часа подешевела Stacks (STX) — на 4,6%.<br><br>
-                    Аналитики компании Santiment, зафиксировали рост активности крупных инвесторов в биткоины на фоне волатильности рынка, связанной с ростом напряженности на Ближнем Востоке и приближающегося халвинга биткоина 19 апреля.<br><br>
-                    В период с 1 марта по 17 марта кошельки, содержащие от 100 до 1000 BTC, пополнились на 43 489 BTC ($2,75 млрд), в то время как кошельки хранящие от 1000 до 10 000 BTC накопили 80 544 BTC ($5,1 млрд). Самые крупные инвесторы, владеющие от 10 000 до 100 000 BTC, увеличили свои запасы на 91 732 BTC ($5,8 млрд).<br><br>
-                    По итогам прошлой недели доля биткоина в общей капитализации всего крипторынка, объем которого составляет $2,5 трлн, достигла почти 55%. Это самый высокий показатель с апреля 2021 года, написал Bloomberg, ссылаясь на данные CoinMarketCap. Текущая тенденция роста доминирования биткоина, по мнению экспертов, может сигнализировать о желании инвесторов криптовалют найти «тихую гавань» в более надежном активе на фоне обострения геополитической ситуации в мире.
+                    <span class="lang" key="bitcoin one">Курс биткоина (BTC) за минувшие сутки вырос на 1,6% и на 17 апреля, 10:00 мск первая криптовалюта торгуется по $63,91 тыс. при капитализации $1,25 трлн.</span><br><br> 
+                    <span class="lang" key="bitcoin two">Вечером 16 марта, в ходе американской торговой сессии, курс биткоина опускался до $61,9 тыс., но к закрытию рынка смог немного отыграть потери. Снижение стоимости первой криптовалюты совпало с очередным оттоком средств из биржевого фонда Grayscale Bitcoin Trust (GBTC), который нивелировал приток в другие биткоин-ETF.</span><br><br>
+                    <span class="lang" key="bitcoin free">Согласно данным SoSoValue, за вчерашний день из GBTC было выведено почти $79,4 млн. В то же время, большинство других спотовых биткоин-ETF продемонстрировали умеренный приток средств. Лидером по притоку стал фонд iShares Bitcoin Trust, куда инвесторы вложили $25,78 млн.</span><br><br>
+                    <span class="lang" key="bitcoin four">Курс второй по капитализации криптовалюты — Ethereum — опускался ниже $3000 в торговые часы в США, однако к утру 17 апреля закрепился выше этой отметки. На 10:00 мск Ethereum торгуется по $3088.</span><br><br>
+                    <span class="lang" key="bitcoin five">Остальные крупнейшие по капитализации криптовалюты в целом повторили движение лидера — подешевели BNB от Binance, XRP от Ripple, Cardano (ADA) и Dogecoin (DOGE). Исключением стал только токен блокчейна Solana (SOL), монета за сутки прибавила в цене 3,5%, достигнув отметки $140.</span><br><br>
+                    <span class="lang" key="bitcoin six">Из топ-100 криптовалют по капитализации за прошедшие сутки самый крупный рост показала Akash Network (AKT) — на 13%. Сильнее других за последние 24 часа подешевела Stacks (STX) — на 4,6%.</span><br><br>
+                    <span class="lang" key="bitcoin seven">Аналитики компании Santiment, зафиксировали рост активности крупных инвесторов в биткоины на фоне волатильности рынка, связанной с ростом напряженности на Ближнем Востоке и приближающегося халвинга биткоина 19 апреля.</span><br><br>
+                    <span class="lang" key="bitcoin eight">В период с 1 марта по 17 марта кошельки, содержащие от 100 до 1000 BTC, пополнились на 43 489 BTC ($2,75 млрд), в то время как кошельки хранящие от 1000 до 10 000 BTC накопили 80 544 BTC ($5,1 млрд). Самые крупные инвесторы, владеющие от 10 000 до 100 000 BTC, увеличили свои запасы на 91 732 BTC ($5,8 млрд).</span><br><br>
+                    <span class="lang" key="bitcoin nine">По итогам прошлой недели доля биткоина в общей капитализации всего крипторынка, объем которого составляет $2,5 трлн, достигла почти 55%. Это самый высокий показатель с апреля 2021 года, написал Bloomberg, ссылаясь на данные CoinMarketCap. Текущая тенденция роста доминирования биткоина, по мнению экспертов, может сигнализировать о желании инвесторов криптовалют найти «тихую гавань» в более надежном активе на фоне обострения геополитической ситуации в мире.</span>
                 </p>
             </div>
 
@@ -169,18 +176,18 @@
         <div class="album py-5 animate__fadeIn animate__animated">
 
             <div class="container">
-                <h3 class="text-body-emphasis">Читайте далее</h3>
+                <h3 class="text-body-emphasis lang" key="read more">Читайте далее</h3>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                     <div class="col">
                         <div class="card">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="images/bigblog1.png" alt="Минфин">
 
                             <div class="card-body">
-                                <h5 class="text-body-emphasis">Минфин РФ предложит в среду ОФЗ ПД-26207 на 20 млрд р и ПД-26244 безлимитно</h5>
-                                <p class="card-text">Минфин России проведет в среду, 17 апреля, два аукциона по первичному размещению рублевого госдолга...</p>
+                                <h5 class="text-body-emphasis lang" key="minfin">Минфин РФ предложит в среду ОФЗ ПД-26207 на 20 млрд р и ПД-26244 безлимитно</h5>
+                                <p class="card-text lang" key="minfin text">Минфин России проведет в среду, 17 апреля, два аукциона по первичному размещению рублевого госдолга...</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="news.html"><button class="btn btn-primary px-4" type="button">Читать</button></a>
+                                        <a href="news.html"><button class="btn btn-primary px-4" type="button"><span class="lang" key="read">Читать</span></button></a>
                                     </div>
 
                                 </div>
@@ -191,12 +198,12 @@
                         <div class="card">
                             <img class="bd-placeholder-img card-img-top" width="100%" height="100%" src="images/bigblog2.png" alt="eth">
                             <div class="card-body">
-                                <h5 class="text-body-emphasis">Эксперты указали на потенциал заметной коррекции Ethereum</h5>
+                                <h5 class="text-body-emphasis lang" key="ethereum">Эксперты указали на потенциал заметной коррекции Ethereum</h5>
                                 <br>
-                                <p class="card-text">На рынке Ethereum-деривативов сформировались пессимистичные ожидания касательно перспектив цены в ближайшем...</p>
+                                <p class="card-text lang" key="ethereum text">На рынке Ethereum-деривативов сформировались пессимистичные ожидания касательно перспектив цены в ближайшем...</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group">
-                                        <a href="eth.html"><button class="btn btn-primary px-4" type="button">Читать</button></a>
+                                        <a href="eth.html"><button class="btn btn-primary px-4" type="button"><span class="lang" key="read">Читать</span></button></a>
                                     </div>
 
                                 </div>
@@ -209,17 +216,17 @@
                 <div class="container animate__fadeIn animate__animated">
                     <footer class="py-3 my-4">
                         <p class="text-center">
-                            <a href="#">Наверх</a>
+                            <a href="#" class="lang" key="top">Наверх</a>
                         </p>
                         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis">Главная</a></li>
-                            <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis">Курс монет</a></li>
-                            <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis">Конвертор</a></li>
-                            <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis">Блог</a></li>
-                            <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis">Наша команда</a></li>
+                            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-emphasis lang" key="home">Главная</a></li>
+                            <li class="nav-item"><a href="coinrate.html" class="nav-link px-2 text-body-emphasis lang" key="coin rate">Курс монет</a></li>
+                            <li class="nav-item"><a href="coinexchange.html" class="nav-link px-2 text-body-emphasis lang" key="coin exchange">Конвертор</a></li>
+                            <li class="nav-item"><a href="blog.html" class="nav-link px-2 text-body-emphasis lang" key="blog">Блог</a></li>
+                            <li class="nav-item"><a href="ourteam.html" class="nav-link px-2 text-body-emphasis lang" key="our team">Наша команда</a></li>
                             <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-body-emphasis">FAQ</a></li>
-                            <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis">Политика конфиденциальности</a></li>
-                            <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis">Связь с нами</a></li>
+                            <li class="nav-item"><a href="Privacy Policy.html" class="nav-link px-2 text-body-emphasis lang" key="privacy policy">Политика конфиденциальности</a></li>
+                            <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-body-emphasis lang" key="contact us">Связь с нами</a></li>
                         </ul>
                         <p class="text-center text-body-secondary">&copy; 2024 Token inside</p>
                     </footer>
@@ -235,6 +242,8 @@
     </div>
 </body>
 
+
+<script src="js/translate.js"></script>
 <script src="js/cookie.js"></script>
 <script src="js/scroll.js"></script>
 <script src="js/theme.js"></script>

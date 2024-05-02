@@ -15,6 +15,13 @@ $(function() {
 
 var arrLang = {
   'en': {
+    'title blog': 'Blog - Token inside',
+    'title error': 'Error 404',
+    'title news': 'The Ministry of Finance of the Russian Federation will offer on Wednesday OFZ PD-26207 for 20 billion rubles and PD-26244 unlimited',
+    'title bitcoin': 'The Bitcoin rate rose above $63 thousand',
+    'title ethereum': 'Experts pointed to the potential for a noticeable correction in Ethereum',
+    'title our team': 'Our team - Token inside',
+
     'cookie text': 'This website uses cookies to ensure you get the best experience on our website.',
     'cookie a': 'Learn more',
     'cookie btn': 'Okay',
@@ -45,20 +52,102 @@ var arrLang = {
     'convert': 'Cryptocurrency converter',
     'crypto text': "Today's cryptocurrency prices",
 
+    'contacts': 'My contacts: ',
+
     'sergei': 'Sergey Korobkov',
+    'sergei text one': 'As a team lead at a crypto exchange, I became an architect, colleague and inspiration for a team of three developers and a tester. Together we improved our product, taking into account both the complexities of the cryptocurrency market and the needs of our users.',
+    'sergei text two': 'My role included coordinating the work of the team, distributing tasks, and ensuring transparency in the development process. I strived to create an atmosphere of mutual support and open communication so that each team member could contribute and feel valued in the process.',
+    'sergei text free': "We actively interacted with other departments of the company, such as design and product management, to harmoniously integrate the developed functions and ensure that our product aligned with the company's strategic goals.",
+    'sergei text four': "Our daily calls helped us track progress and solve emerging problems quickly, and regular retrospectives allowed us to constantly improve our work process and increase the team's efficiency.",
+    'sergei text five': 'It was important not only to develop new functionality, but also to ensure its high quality. Our tester helped us with this, who thoroughly tested the product and helped identify and eliminate even the smallest defects.',
+    'sergei text six': 'As a result, thanks to the hard work and joint efforts of our team, we achieved our goals and created a product that brought benefit and satisfaction to our users in the world of cryptocurrency technologies.',
+
+
     'gismat': 'Gismat Agayev',
+    'gismat text one': 'When I worked as a front-end developer at a crypto exchange, my job was to create user interfaces that not only effectively displayed cryptocurrency data, but also provided users with an intuitive and engaging user experience.',
+    'gismat text two': 'I actively participated in the design and development of new functions and capabilities of the platform, taking into account the specifics of the cryptocurrency market and the requirements of our users. My work involved creating responsive and cross-browser interfaces to provide the same high level of user experience across all devices and browsers.',
+    'gismat text free': 'In addition, I constantly improved the development process by introducing new technologies and tools that helped speed up deployment and improve the quality of our front-end code. We also worked closely with designers and backend developers to ensure that all components of our platform interact harmoniously.',
+    'gismat text four': 'Ultimately, my work helped create modern and innovative user interfaces that make using the crypto exchange more convenient and efficient for all our users.',
+
     'andrey': 'Andrey Razin',
+    'andrey text one': 'When I worked as a developer at a crypto exchange, my role was to create and support functionality that was key for users of our platform. I was involved in developing new features, fixing bugs and optimizing the performance of our software.',
+    'andrey text two': 'My task included both front-end and back-end aspects of development. I worked on implementing new user interface capabilities, as well as developing and optimizing backend logic, ensuring the security and efficiency of our platform.',
+    'andrey text free': 'In addition, I actively participated in code review and testing of the code to ensure its quality and compliance with development standards. We continually strive to improve our development processes and introduce new techniques and tools to speed up development and improve the stability of our software.',
+    'andrey text four': 'My work on the crypto exchange was not only technical, but also strategic. We constantly analyzed market trends and user needs to create a product that met their expectations and remained competitive in the rapidly changing world of cryptocurrencies.',
+
     'mumin': 'Atakhonov Inomjon',
+    'mumin text one': 'When I worked as a full-stack developer at a crypto exchange, my job was to create and support the full stack of technologies needed to run our platform. This included both front-end development of user interfaces and back-end logic to handle user requests and interact with the database.',
+    'mumin text two': 'My work began with requirements analysis and system architecture design. I developed and implemented new functions and capabilities, taking into account both the needs of users and the peculiarities of the cryptocurrency market. We have constantly strived to improve the user experience and expand the functionality of the platform to be at the forefront of the industry.',
+    'mumin text free': 'In addition, I worked on optimizing the performance and security of our platform. This included optimizing the code, providing protection against external threats and scaling the system to ensure it runs reliably even under high load.',
+    'mumin text four': 'My job required not only technical skills, but also the ability to communicate effectively with other team members, including designers, testers and product managers. Only through our joint efforts could we achieve our goals and create a product that was in demand and loved by our users in the world of cryptocurrency technology.',
+
+
     'oleg': 'Oleg Babkin',
+    'oleg text one': 'When I worked as a QA tester at a crypto exchange, my main task was to ensure the reliability and security of our trading platform for users. I have been actively involved in testing new features and updates, conducting thorough checks to ensure compliance, correct operation and freedom from errors.',
+    'oleg text two': 'My work included developing test scripts, test cases and automated tests for various platform components, including user interfaces, backend logic and security. I also performed regression testing to ensure that the changes did not affect existing functionality.',
+    'oleg text free': 'In close collaboration with the developers and other team members, we regularly discussed testing results, problems found and how to fix them. I have strived to continuously improve testing processes and introduce new methods to improve the efficiency and quality of our product.',
+    'oleg text four': 'My work has been an integral part of the development process at the crypto exchange, helping to ensure the stability and reliability of our platform in the dynamic world of cryptocurrency technology.',
+
     'close': 'Close',
 
-    'sergei text': 'As a team lead at a crypto exchange, I became an architect, collaborator and inspiration for a team of three developers and a tester. Together we improved our product, taking into account both the complexities of the cryptocurrency market and the needs of our users. My role included coordinating the work of the team, distributing tasks, and ensuring transparency in the development process. I strived to create an atmosphere of mutual support and open communication so that each team member could contribute and feel valued in the process. We actively collaborated with other departments of the company, such as design and product management, to harmoniously integrate the developed features and ensure that our product aligned with the strategic goals of the company. Our daily stand-ups helped us track progress and solve emerging problems quickly, and regular retrospectives allowed us to constantly improve our work process and increase the team’s efficiency. It was important not only to develop new functionality, but also to ensure its high quality. We were assisted in this by our tester, who conducted thorough testing of the product and helped identify and eliminate even the smallest defects. As a result, thanks to the hard work and joint efforts of our team, we achieved our goals and created a product that brought benefit and satisfaction to our users in world of cryptocurrency technologies. My contacts:',
-    'gismat text': 'Гисмат Агаев',
-    'andrey text': 'Андрей Разин',
-    'mumin text': 'Атахонов Иномджон',
-    'oleg text': 'Олег Бабкин',
+    
+
+    'page': 'This page does not exist',
+
+    'blog': 'Blog',
+
+    'news': 'News',
+    'minfin': 'The Ministry of Finance of the Russian Federation will offer on Wednesday OFZ for 20 billion rubles and unlimited',
+    'minfin text': 'The Russian Ministry of Finance will hold two auctions on the initial placement of ruble government debt on Wednesday, April 17...',
+
+    'bitcoin badge': 'Bitcoin',
+    'bitcoin': 'The Bitcoin rate rose above $63 thousand',
+    'bitcoin text': 'The Bitcoin (BTC) rate increased by 1.6% over the past 24 hours and as of April 17, 10:00 Moscow time, the first cryptocurrency is trading at $63.91 thousand with a capitalization of $1.25 trillion...',
+
+    'eth': 'Ethereum',
+    'ethereum': 'Experts pointed to the potential for a noticeable correction in Ethereum',
+    'ethereum text': 'The Ethereum derivatives market has formed pessimistic expectations regarding price prospects in the near future. The Block writes about this...',
+
+    'back': 'Back',
+
+    'read more': 'Read more',
+
+    'minfin one': 'The Russian Ministry of Finance will hold two auctions on the initial placement of ruble government debt on Wednesday, April 17.',
+    'minfin two': 'At the first, the department will offer federal loan bonds with constant coupon income, series PD-26207, with a maturity date of February 3, 2027, in the amount of 20 billion rubles.',
+    'minfin free': 'On the second floor there are also federal loan bonds with constant coupon income, series PD-26244, maturing on March 15, 2034 in the amount of balances available for placement in the specified issue, or 103 billion rubles.',
+    'minfin four': 'The following rules for holding auctions are established:',
+    'minfin five': '- 12:00 - 12:30 - entry of applications for the auction for placement of the issue PD-26207;',
+    'minfin six': '- 14:00 - enter the cut-off price for the release of PD-26207;',
+    'minfin seven': '- 14:30 - 15:00 - entry of applications for the auction for placement of issue PD-26244;',
+    'minfin eight': '- 16:30 - enter the cut-off price for the release of PD-26244.',
+
+    'bitcoin one': 'The Bitcoin (BTC) rate increased by 1.6% over the past day and as of April 17, 10:00 Moscow time, the first cryptocurrency is trading at $63.91 thousand with a capitalization of $1.25 trillion.',
+    'bitcoin two': 'On the evening of March 16, during the American trading session, the Bitcoin rate dropped to $61.9 thousand, but by the market closing it was able to regain some losses. The decline in the value of the first cryptocurrency coincided with another outflow of funds from the Grayscale Bitcoin Trust (GBTC) exchange-traded fund, which offset the inflow into other Bitcoin ETFs.',
+    'bitcoin free': 'According to SoSoValue, almost $79.4 million was withdrawn from GBTC yesterday. At the same time, most other spot Bitcoin ETFs showed moderate inflows. The leader in inflows was the iShares Bitcoin Trust, where investors invested $25.78 million.',
+    'bitcoin four': 'The rate of the second cryptocurrency by capitalization, Ethereum, fell below $3,000 during trading hours in the United States, but by the morning of April 17 it had consolidated above this level. At 10:00 Moscow time, Ethereum is trading at $3088.',
+    'bitcoin five': 'The rest of the largest cryptocurrencies by capitalization generally repeated the movement of the leader - BNB from Binance, XRP from Ripple, Cardano (ADA) and Dogecoin (DOGE) fell in price. The only exception was the Solana blockchain token (SOL), the coin increased in price by 3.5% per day, reaching $140.',
+    'bitcoin six': 'Of the top 100 cryptocurrencies by capitalization over the past 24 hours, Akash Network (AKT) showed the largest growth - by 13%. Stacks (STX) fell in price the most over the past 24 hours - by 4.6%.',
+    'bitcoin seven': 'Analysts at Santiment recorded an increase in the activity of large investors in Bitcoin against the backdrop of market volatility associated with rising tensions in the Middle East and the approaching Bitcoin halving on April 19.',
+    'bitcoin eight': 'Between March 1 and March 17, wallets holding between 100 and 1,000 BTC added 43,489 BTC ($2.75 billion), while wallets holding between 1,000 and 10,000 BTC accumulated 80,544 BTC ($5.1 billion). ). The largest investors, holding between 10,000 and 100,000 BTC, increased their holdings by 91,732 BTC ($5.8 billion).',
+    'bitcoin nine': 'As of last week, the share of Bitcoin in the total capitalization of the entire crypto market, whose volume is $2.5 trillion, reached almost 55%. This is the highest figure since April 2021, Bloomberg wrote, citing data from CoinMarketCap. The current trend of increasing dominance of Bitcoin, according to experts, may signal the desire of cryptocurrency investors to find a “safe haven” in a more reliable asset against the backdrop of an aggravation of the geopolitical situation in the world.',
+
+    'ethereum one': 'The Ethereum derivatives market has formed pessimistic expectations regarding price prospects in the near future. The Block writes about this.',
+    'ethereum two': '“Near-term options indicate risks of a sharp move in either direction,” QCP Capital said.',
+    'ethereum free': 'Cryptocurrency derivatives trader Gordon Grant came to similar conclusions.',
+    'ethereum four': '“You can see a significant divergence in options on Ethereum compared to digital gold. The term structure remains sharply inverted with an inflection point, demonstrating demand for gamma and its premium to its Bitcoin counterpart, as well as gamma’s premium over vega,” he explained.',
+    'ethereum five': 'More traders are buying puts ahead of the April 18 expiration. The put-to-call ratio rose to 1.04, according to Deribit. A ratio above 1.0 indicates a bias towards the former, which is a sign of bearish sentiment in the market.',
+    'ethereum six': 'QCP Capital analysts also drew attention to the market pessimism in terms of the risk reversal strategy.',
+    'ethereum seven': '“The metrics have become very negative for the near term. “This indicates nervousness,” they added.',
+    'ethereum eight': 'Experts attributed the worsening expectations to macroeconomic conditions. They predicted the preservation of the status quo amid the development of the conflict in the Middle East and the weakness of the US stock market.',
+    'ethereum nine': 'Earlier, analysts recorded an outflow from Ethereum funds for the fifth week in a row.',
   },
   'ru': {
+    'title blog': 'Блог - Token inside',
+    'title error': 'Ошибка 404',
+    'title news': 'Минфин РФ предложит в среду ОФЗ ПД-26207 на 20 млрд р и ПД-26244 безлимитно',
+    'title ethereum': 'Эксперты указали на потенциал заметной коррекции Ethereum',
+    'title our team': 'Наша команда - Token inside',
+
     'cookie text': 'Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.',
     'cookie a': 'Узнать больше',
     'cookie btn': 'Окей',
@@ -89,17 +178,93 @@ var arrLang = {
     'convert': 'Конвертер криптовалют',
     'crypto text': 'Сегодняшние цены на криптовалюту',
 
+    'contacts': 'Мои контакты: ',
+
     'sergei': 'Сергей Коробков',
+    'sergei text one': 'В роли тимлида на криптобирже я стал архитектором, соратником и вдохновителем для команды из трех разработчиков и тестировщика. Мы вместе совершенствовали наш продукт, учитывая как сложности криптовалютного рынка, так и потребности наших пользователей.',
+    'sergei text two': 'Моя роль включала в себя координацию работы команды, распределение задач, и обеспечение прозрачности в процессе разработки. Я стремился создать атмосферу взаимовыручки и открытого общения, чтобы каждый член команды мог вносить свой вклад и чувствовать себя ценным участником процесса.',
+    'sergei text free': 'Мы активно взаимодействовали с другими отделами компании, такими как дизайн и продуктовый менеджмент, чтобы гармонично интегрировать разработанные функции и обеспечить соответствие нашего продукта стратегическим целям компании.',
+    'sergei text four': 'Наши ежедневные созвоны помогали нам отслеживать прогресс и решать возникающие проблемы оперативно, а регулярные ретроспективы позволяли нам постоянно совершенствовать наш процесс работы и повышать эффективность команды.',
+    'sergei text five': 'Было важно не только разрабатывать новый функционал, но и обеспечивать его высокое качество. В этом нам помогал наш тестировщик, который проводил тщательное тестирование продукта и помогал выявлять и устранять даже самые мелкие дефекты.',
+    'sergei text six': 'В итоге, благодаря упорному труду и совместным усилиям нашей команды, мы достигали поставленных целей и создавали продукт, который приносил пользу и удовлетворение нашим пользователям в мире криптовалютных технологий.',
+
     'gismat': 'Гисмат Агаев',
+    'gismat text one': 'Когда я работал фронтенд-разработчиком на криптобирже, моя задача состояла в создании пользовательских интерфейсов, которые не только эффективно отображали данные о криптовалютах, но и предоставляли пользователям интуитивно понятный и привлекательный опыт использования.',
+    'gismat text two': 'Я активно участвовал в проектировании и разработке новых функций и возможностей платформы, учитывая специфику криптовалютного рынка и требования наших пользователей. Моя работа включала создание адаптивных и кросс-браузерных интерфейсов, чтобы обеспечить одинаково высокий уровень пользовательского опыта на всех устройствах и во всех браузерах.',
+    'gismat text free': 'Кроме того, я постоянно улучшал процесс разработки, внедряя новые технологии и инструменты, которые помогали ускорить развертывание и повысить качество нашего фронтенд-кода. Мы также тесно сотрудничали с дизайнерами и бэкенд-разработчиками, чтобы обеспечить гармоничное взаимодействие всех компонентов нашей платформы.',
+    'gismat text four': 'В итоге, моя работа помогала создавать современные и инновационные пользовательские интерфейсы, которые делали использование криптобиржи более удобным и эффективным для всех наших пользователей.',
+
     'andrey': 'Андрей Разин',
+    'andrey text one': 'Когда я работал разработчиком на криптобирже, моя роль заключалась в создании и поддержке функциональности, которая была ключевой для пользователей нашей платформы. Я участвовал в разработке новых функций, исправлении ошибок и оптимизации производительности нашего программного обеспечения.',
+    'andrey text two': 'Моя задача включала в себя как фронтендные, так и бэкендные аспекты разработки. Я работал над реализацией новых возможностей интерфейса пользователя, а также над разработкой и оптимизацией бэкендной логики, обеспечивая безопасность и эффективность нашей платформы.',
+    'andrey text free': 'Кроме того, я активно участвовал в код-ревью и тестировании кода, чтобы гарантировать его качество и соответствие стандартам разработки. Мы постоянно стремились к улучшению процессов разработки и внедряли новые методики и инструменты, чтобы ускорить разработку и повысить стабильность нашего программного обеспечения.',
+    'andrey text four': 'Моя работа на криптобирже была не только технической, но и стратегической. Мы постоянно анализировали рыночные тренды и потребности пользователей, чтобы создавать продукт, который соответствовал их ожиданиям и оставался конкурентоспособным в быстро изменяющемся мире криптовалют.',
+
+
     'mumin': 'Атахонов Иномджон',
+    'mumin text one': 'Когда я работал фуллстек разработчиком на криптобирже, моя задача заключалась в создании и поддержке полного стека технологий, необходимых для функционирования нашей платформы. Это включало в себя как фронтендную разработку интерфейсов пользователя, так и бэкендную логику, обеспечивающую обработку запросов пользователей и взаимодействие с базой данных.',
+    'mumin text two': 'Моя работа начиналась с анализа требований и проектирования архитектуры системы. Я разрабатывал и реализовывал новые функции и возможности, учитывая как потребности пользователей, так и особенности криптовалютного рынка. Мы постоянно стремились к улучшению пользовательского опыта и расширению функциональности платформы, чтобы быть на передовой в индустрии.',
+    'mumin text free': 'Кроме того, я занимался оптимизацией производительности и безопасности нашей платформы. Это включало в себя оптимизацию кода, обеспечение защиты от внешних угроз и масштабируемость системы, чтобы обеспечить ее надежную работу даже при высокой нагрузке.',
+    'mumin text four': 'Моя работа требовала не только технических навыков, но и способности эффективно коммуницировать с другими членами команды, включая дизайнеров, тестировщиков и менеджеров продукта. Только благодаря нашему совместному усилию мы могли достигать наших целей и создавать продукт, который был востребован и любим нашими пользователями в мире криптовалютных технологий.',
+
+
     'oleg': 'Олег Бабкин',
+    'oleg text one': 'Когда я работал QA тестировщиком в криптобирже, моя основная задача заключалась в обеспечении надежности и безопасности нашей торговой платформы для пользователей. Я активно участвовал в тестировании новых функций и обновлений, проводя тщательные проверки на соответствие требованиям, корректность работы и отсутствие ошибок.',
+    'oleg text two': 'Моя работа включала в себя разработку тестовых сценариев, тест-кейсов и автоматизированных тестов для различных компонентов платформы, включая интерфейсы пользователя, бэкендную логику и систему безопасности. Я также проводил регрессионное тестирование, чтобы убедиться, что изменения не повлияли на уже существующий функционал.',
+    'oleg text free': 'В тесном сотрудничестве с разработчиками и другими членами команды мы регулярно обсуждали результаты тестирования, обнаруженные проблемы и способы их устранения. Я стремился к постоянному улучшению процессов тестирования и внедрению новых методов, чтобы повысить эффективность и качество нашего продукта.',
+    'oleg text four': 'Моя работа была неотъемлемой частью процесса разработки на криптобирже, помогая обеспечить стабильность и надежность нашей платформы в динамичном мире криптовалютных технологий.',
+    
     'close': 'Закрыть',
 
-    'sergei text': 'В роли тимлида на криптобирже я стал архитектором, соратником и вдохновителем для команды из трех разработчиков и тестировщика. Мы вместе совершенствовали наш продукт, учитывая как сложности криптовалютного рынка, так и потребности наших пользователей.Моя роль включала в себя координацию работы команды, распределение задач, и обеспечение прозрачности в процессе разработки. Я стремился создать атмосферу взаимовыручки и открытого общения, чтобы каждый член команды мог вносить свой вклад и чувствовать себя ценным участником процесса.Мы активно взаимодействовали с другими отделами компании, такими как дизайн и продуктовый менеджмент, чтобы гармонично интегрировать разработанные функции и обеспечить соответствие нашего продукта стратегическим целям компании.Наши ежедневные стендапы помогали нам отслеживать прогресс и решать возникающие проблемы оперативно, а регулярные ретроспективы позволяли нам постоянно совершенствовать наш процесс работы и повышать эффективность команды.Было важно не только разрабатывать новый функционал, но и обеспечивать его высокое качество. В этом нам помогал наш тестировщик, который проводил тщательное тестирование продукта и помогал выявлять и устранять даже самые мелкие дефекты.В итоге, благодаря упорному труду и совместным усилиям нашей команды, мы достигали поставленных целей и создавали продукт, который приносил пользу и удовлетворение нашим пользователям в мире криптовалютных технологий.Мои контакты:',
-    'gismat text': 'Гисмат Агаев',
-    'andrey text': 'Андрей Разин',
-    'mumin text': 'Атахонов Иномджон',
-    'oleg text': 'Олег Бабкин',
+    
+
+    'blog': 'Блог',
+
+    'page': 'Такой страницы не существует',
+
+    'news': 'Новости',
+    'minfin': 'Минфин РФ предложит в среду ОФЗ на 20 млрд ₽ и безлимитно',
+    'minfin text': 'Минфин России проведет в среду, 17 апреля, два аукциона по первичному размещению рублевого госдолга...',
+
+    'bitcoin badge': 'Биткоин',
+    'bitcoin': 'Курс биткоина поднялся выше $63 тыс',
+    'bitcoin text': 'Курс биткоина (BTC) за минувшие сутки вырос на 1,6% и на 17 апреля, 10:00 мск первая криптовалюта торгуется по $63,91 тыс. при капитализации $1,25 трлн...',
+
+    'eth': 'Эфириум',
+    'ethereum': 'Эксперты указали на потенциал заметной коррекции Ethereum',
+    'ethereum text': 'На рынке Ethereum-деривативов сформировались пессимистичные ожидания касательно перспектив цены в ближайшем будущем. Об этом пишет The Block...',
+
+    'back': 'Назад',
+
+    'read more': 'Читайте далее',
+
+    'minfin one': 'Минфин России проведет в среду, 17 апреля, два аукциона по первичному размещению рублевого госдолга.',
+    'minfin two': 'На первом ведомство предложит облигации федерального займа с постоянным купонным доходом серии ПД-26207 датой погашения 3 февраля 2027 года в объеме 20 миллиардов рублей.',
+    'minfin free': 'На втором - также облигации федерального займа с постоянным купонным доходом, серии ПД-26244 погашением 15 марта 2034 года в объеме остатков, доступных для размещения в указанном выпуске, или на 103 миллиарда рублей.',
+    'minfin four': 'Устанавливается следующий регламент проведения аукционов:',
+    'minfin five': '- 12:00 - 12:30 - ввод заявок на аукцион по размещению выпуска ПД-26207;',
+    'minfin six': '- 14:00 - ввод цены отсечения для выпуска ПД-26207;',
+    'minfin seven': '- 14:30 - 15:00 - ввод заявок на аукцион по размещению выпуска ПД-26244;',
+    'minfin eight': '- 16:30 - ввод цены отсечения для выпуска ПД-26244.',
+
+    'bitcoin one': 'Курс биткоина (BTC) за минувшие сутки вырос на 1,6% и на 17 апреля, 10:00 мск первая криптовалюта торгуется по $63,91 тыс. при капитализации $1,25 трлн.',
+    'bitcoin two': 'Вечером 16 марта, в ходе американской торговой сессии, курс биткоина опускался до $61,9 тыс., но к закрытию рынка смог немного отыграть потери. Снижение стоимости первой криптовалюты совпало с очередным оттоком средств из биржевого фонда Grayscale Bitcoin Trust (GBTC), который нивелировал приток в другие биткоин-ETF.',
+    'bitcoin free': 'Согласно данным SoSoValue, за вчерашний день из GBTC было выведено почти $79,4 млн. В то же время, большинство других спотовых биткоин-ETF продемонстрировали умеренный приток средств. Лидером по притоку стал фонд iShares Bitcoin Trust, куда инвесторы вложили $25,78 млн.',
+    'bitcoin four': 'Курс второй по капитализации криптовалюты — Ethereum — опускался ниже $3000 в торговые часы в США, однако к утру 17 апреля закрепился выше этой отметки. На 10:00 мск Ethereum торгуется по $3088.',
+    'bitcoin five': 'Остальные крупнейшие по капитализации криптовалюты в целом повторили движение лидера — подешевели BNB от Binance, XRP от Ripple, Cardano (ADA) и Dogecoin (DOGE). Исключением стал только токен блокчейна Solana (SOL), монета за сутки прибавила в цене 3,5%, достигнув отметки $140.',
+    'bitcoin six': 'Из топ-100 криптовалют по капитализации за прошедшие сутки самый крупный рост показала Akash Network (AKT) — на 13%. Сильнее других за последние 24 часа подешевела Stacks (STX) — на 4,6%.',
+    'bitcoin seven': 'Аналитики компании Santiment, зафиксировали рост активности крупных инвесторов в биткоины на фоне волатильности рынка, связанной с ростом напряженности на Ближнем Востоке и приближающегося халвинга биткоина 19 апреля.',
+    'bitcoin eight': 'В период с 1 марта по 17 марта кошельки, содержащие от 100 до 1000 BTC, пополнились на 43 489 BTC ($2,75 млрд), в то время как кошельки хранящие от 1000 до 10 000 BTC накопили 80 544 BTC ($5,1 млрд). Самые крупные инвесторы, владеющие от 10 000 до 100 000 BTC, увеличили свои запасы на 91 732 BTC ($5,8 млрд).',
+    'bitcoin nine': 'По итогам прошлой недели доля биткоина в общей капитализации всего крипторынка, объем которого составляет $2,5 трлн, достигла почти 55%. Это самый высокий показатель с апреля 2021 года, написал Bloomberg, ссылаясь на данные CoinMarketCap. Текущая тенденция роста доминирования биткоина, по мнению экспертов, может сигнализировать о желании инвесторов криптовалют найти «тихую гавань» в более надежном активе на фоне обострения геополитической ситуации в мире.',
+
+    'ethereum one': 'На рынке Ethereum-деривативов сформировались пессимистичные ожидания касательно перспектив цены в ближайшем будущем. Об этом пишет The Block.',
+    'ethereum two': '«Ближние опционы указывают на риски резкого движения в любом направлении», — заявили в QCP Capital.',
+    'ethereum free': 'К схожим выводам пришел трейдер криптовалютных деривативов Гордон Грант.',
+    'ethereum four': '«Вы можете видеть существенное расхождение в опционах на Ethereum по сравнению с цифровым золотом. Срочная структура остается резко инвертированной с перегибом, демонстрируя спрос на гамму и ее премию с аналогом в биткоине, а также премию гаммы над вегой», — пояснил он.',
+    'ethereum five': 'Все больше трейдеров покупают путы перед экспирацией 18 апреля. По данным Deribit, соотношение пут и колл выросло до 1,04. Коэффициент выше 1,0 указывает на перекос в сторону первых, что является признаком медвежьих настроений на рынке.',
+    'ethereum six': 'Аналитики QCP Capital также обратили внимание на пессимизм рынка в показателях стратегии risk reversal.',
+    'ethereum seven': '«Метрики стали очень негативными на ближайшую перспективу. "Это указывает на нервозность", — добавили они.',
+    'ethereum eight': 'Специалисты объяснили ухудшение ожиданий макроэкономическими условиями. Они спрогнозировали сохранение статус-кво на фоне развития конфликта на Ближнем Востоке и слабости фондового рынка США.',
+    'ethereum nine': 'Ранее аналитики зафиксировали отток из Ethereum-фондов пятую неделю подряд.',
   }
 }
