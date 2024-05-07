@@ -94,12 +94,12 @@ a{
 .graphic{
   position: relative;
   top: -20px;
-  right: -15px;
+  right: 15px;
 }
 .blog{
   position: relative;
   top: -15px;
-  right: -20px;
+  right: 25px;
 }
 
 html {
@@ -121,13 +121,115 @@ body {
 .error{
   position: relative;
   bottom: 20px;
+  right: 15px;
 }
-#cb-cookie-banner { 
-  position: fixed; 
-  bottom: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 999; 
-  border-radius: 0; 
-  display: none; 
-} 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cookies-eu-banner {
+  background: #444;
+  color: #fff;
+  padding: 6px;
+  font-size: 13px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.cookies-eu-banner button {
+  text-decoration: none;
+  background: #222;
+  color: #fff;
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 4px 7px;
+  margin: 2px 0;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.07s, color 0.07s, border-color 0.07s;
+}
+
+.cookies-eu-banner button:hover {
+  background: #fff;
+  color: #222;
+}
+
+.hidden {
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  max-width: 100%; /* Максимальная ширина таблицы */
+  overflow-x: auto; /* Позволяет прокручивать таблицу, если она слишком широкая */
+}
+
+
+td, th {
+  padding: 12px;
+  max-width: 150px; /* Максимальная ширина ячеек */
+  max-width: 150px; /* Максимальная ширина ячеек */
+}
+
+td:nth-child(n + 2) {
+  text-align: right;
+}
+
+/* Цвета для положительных и отрицательных значений */
+.positive {
+  color: green;
+}
+
+.negative {
+  color: red;
+}
+
+/* Стили для иконок криптовалют */
+.crypto-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Стили для символов криптовалют */
+.symbol-span {
+
+  margin-left: 5px;
+}
+
+/* Стили для обертки названия криптовалюты */
+.name-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* Отступы */
+.container-md {
+  padding: 20px;
+
+  border-radius: 10px;
+
+}
+
+/* Типография */
+
+
+/* Стили для спиннера */
+#loading-spinner {
+  display: none;
+  margin-bottom: 20px;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+
+
