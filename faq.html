@@ -17,6 +17,7 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
   <title>FAQ</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.css">
 
   <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
@@ -131,76 +132,84 @@
             </ul>
         </header>
     </div>
-  
-    <div class="container my-5">
-        <div class="p-5 text-center bg-body-tertiary rounded-5">
-            <h1 class="text-body-emphasis animate__fadeIn animate__animated lang" key="frequently asked questions">Часто задаваемые вопросы</h1>
-            <br>
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                        <span class="lang" key="main text one">Цена монеты, рыночная капитализация, объем, Trust Score - Что это такое?</span>
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-start">
-                        <span class="lang" key="mini text one">Цена монеты относится к текущей общей средневзвешенной по объему цене криптоактива, обращающегося на активной криптобирже биржа отслеживаемой CoinGecko.</span><br><br>
-                        <span class="lang" key="mini text two">Рыночная капитализация - это один из показателей, используемых для измерения относительного размера криптоактивов. Рыночная капитализация рассчитывается путем умножения цены монеты на доступное предложение.</span><br><br>
-                        <span class="lang" key="mini text free">Объем - общий объем торгов криптоактива на всех активных криптовалютных биржах, отслеживаемых CoinGecko.</span><br><br>
-                        <span class="lang" key="mini text four">Trust Score используется для измерения ликвидности торговых пар на криптовалютных биржах, а также для измерения общей ликвидности, масштаба операций и API покрытия.</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <span class="lang" key="main text two">Насколько часто обновляется вся информация?</span>
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-start">
-                      <span class="lang" key="mini text five">Наши боты обновляют данные по переменному графику. Мы обновляем нашу информацию по мере возможности в соответствии с графиком, приведенным ниже, с учетом ограничений, установленных поставщиками данных.</span><br><br>
-                      <span class="lang" key="mini text six">1) Цена, объем торгов, рыночная капитализация - обновляются каждые 1-10 минут</span><br>
-                      <span class="lang" key="mini text seven">2) Доступное предложение - обновляется каждые 5 минут</span><br>
-                      <span class="lang" key="mini text eight"> 3) Данные разработчиков, социальные данные и данные Alexa - обновляются раз в день</span><br>
-                      <span class="lang" key="mini text nine">4) Информация о блокчейне (сложность майнинга, общее количество блоков, транзакции в секунду и т.д.) - обновляется каждый час</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <span class="lang" key="main text free">Информация о моей монете/проекте неточна. Как я могу ее обновить?</span>
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
-                    <div class="accordion-body text-start">
-                      <span class="lang" key="mini text 10">Мы готовы помочь вам! Есть два варианта действий:</span><br><br>
-                      <span class="lang" key="mini text 11">1. Для внесения существенных изменений, пожалуйста, отправьте заявку на сайте support.coingecko.com и сообщите нам подробно, что вам нужно обновить.</span><br><br>
-                      <span class="lang" key="mini text 12">или</span><br><br>
-                      <span class="lang" key="mini text 13">2. Для внесения мелких изменений просто отправьте запрос через наш сайт Форма заявки.</span><br><br>
-                      <span class="lang" key="mini text 14">В обоих случаях рекомендуется использовать официальную переписку (например, johndoe@cryptoproject.xyz), чтобы помочь нам отфильтровать официальные запросы от спама. Отправка запроса с публичных доменов (например, @gmail.com, @protonmail и т.д.) замедлит время выполнения запроса, так как мы запрашиваем проверку антиспамом.</span><br><br>
-                      <span class="lang" key="mini text 15">Кроме того, мы будем признательны, если вы дадите команде не менее 3-5 рабочих дней на выполнение вашего запроса, чтобы избежать лишней перегрузки, которая замедляет работу команды!</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
-                        <span class="lang" key="main text four">Почему нет в списке других монет?</span>
-                      </button>
-                    </h2>
-                    <div id="collapsefour" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
-                      <div class="accordion-body text-start">
-                        <span class="lang" key="mini text 16">Мы всегда активно добавляем новые монеты на CoinGecko. Может быть несколько причин, по которым некоторые монеты не представлены на сайте, но CoinGecko стремится разместить как можно больше монет, которые представляют ценность для наших пользователей. Даже если вашей монеты нет на сайте CoinGecko.com, вы можете отслеживать ее цену на Geckoterminal.com. Пожалуйста, обратите внимание на то, что повторные заявки одинаковых маркеров будут помечены как спам.</span><br><br>
-                        <span class="lang" key="mini text 17">Если у вас есть вопросы, отправьте нам сообщение по support.coingecko.com :)</span>
+    <div class="container">
+        <div class="text-center bg-body-tertiary rounded-5">
+            <img src="images/faq.png" class="img-fluid text-center rounded-5" alt="фото">
+        </div>
+    </div>
+    
+    <div class="container my-2 animate__fadeIn animate__animated">
+        <div class="p-5 bg-body-tertiary rounded-5">
+            <div class="py-1 text-center">
+                <h1 class="text-body-emphasis animate__fadeIn animate__animated lang" key="frequently asked questions">Часто задаваемые вопросы</h1>
+                <br>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <span class="lang" key="main text one">Цена монеты, рыночная капитализация, объем, Trust Score - Что это такое?</span>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                            <span class="lang" key="mini text one">Цена монеты относится к текущей общей средневзвешенной по объему цене криптоактива, обращающегося на активной криптобирже биржа отслеживаемой CoinGecko.</span><br><br>
+                            <span class="lang" key="mini text two">Рыночная капитализация - это один из показателей, используемых для измерения относительного размера криптоактивов. Рыночная капитализация рассчитывается путем умножения цены монеты на доступное предложение.</span><br><br>
+                            <span class="lang" key="mini text free">Объем - общий объем торгов криптоактива на всех активных криптовалютных биржах, отслеживаемых CoinGecko.</span><br><br>
+                            <span class="lang" key="mini text four">Trust Score используется для измерения ликвидности торговых пар на криптовалютных биржах, а также для измерения общей ликвидности, масштаба операций и API покрытия.</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-              </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <span class="lang" key="main text two">Насколько часто обновляется вся информация?</span>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                          <span class="lang" key="mini text five">Наши боты обновляют данные по переменному графику. Мы обновляем нашу информацию по мере возможности в соответствии с графиком, приведенным ниже, с учетом ограничений, установленных поставщиками данных.</span><br><br>
+                          <span class="lang" key="mini text six">1) Цена, объем торгов, рыночная капитализация - обновляются каждые 1-10 минут</span><br>
+                          <span class="lang" key="mini text seven">2) Доступное предложение - обновляется каждые 5 минут</span><br>
+                          <span class="lang" key="mini text eight"> 3) Данные разработчиков, социальные данные и данные Alexa - обновляются раз в день</span><br>
+                          <span class="lang" key="mini text nine">4) Информация о блокчейне (сложность майнинга, общее количество блоков, транзакции в секунду и т.д.) - обновляется каждый час</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="lang" key="main text free">Информация о моей монете/проекте неточна. Как я могу ее обновить?</span>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
+                        <div class="accordion-body text-start">
+                          <span class="lang" key="mini text 10">Мы готовы помочь вам! Есть два варианта действий:</span><br><br>
+                          <span class="lang" key="mini text 11">1. Для внесения существенных изменений, пожалуйста, отправьте заявку на сайте support.coingecko.com и сообщите нам подробно, что вам нужно обновить.</span><br><br>
+                          <span class="lang" key="mini text 12">или</span><br><br>
+                          <span class="lang" key="mini text 13">2. Для внесения мелких изменений просто отправьте запрос через наш сайт Форма заявки.</span><br><br>
+                          <span class="lang" key="mini text 14">В обоих случаях рекомендуется использовать официальную переписку (например, johndoe@cryptoproject.xyz), чтобы помочь нам отфильтровать официальные запросы от спама. Отправка запроса с публичных доменов (например, @gmail.com, @protonmail и т.д.) замедлит время выполнения запроса, так как мы запрашиваем проверку антиспамом.</span><br><br>
+                          <span class="lang" key="mini text 15">Кроме того, мы будем признательны, если вы дадите команде не менее 3-5 рабочих дней на выполнение вашего запроса, чтобы избежать лишней перегрузки, которая замедляет работу команды!</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed text-body-emphasis" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                            <span class="lang" key="main text four">Почему нет в списке других монет?</span>
+                          </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse text-body-emphasis" data-bs-parent="#accordionExample">
+                          <div class="accordion-body text-start">
+                            <span class="lang" key="mini text 16">Мы всегда активно добавляем новые монеты на CoinGecko. Может быть несколько причин, по которым некоторые монеты не представлены на сайте, но CoinGecko стремится разместить как можно больше монет, которые представляют ценность для наших пользователей. Даже если вашей монеты нет на сайте CoinGecko.com, вы можете отслеживать ее цену на Geckoterminal.com. Пожалуйста, обратите внимание на то, что повторные заявки одинаковых маркеров будут помечены как спам.</span><br><br>
+                            <span class="lang" key="mini text 17">Если у вас есть вопросы, отправьте нам сообщение по support.coingecko.com :)</span>
+                          </div>
+                        </div>
+                      </div>
             </div>
         </div>
+    </div>
+    </div>
+    
 
         <div class="container animate__fadeIn animate__animated">
           <footer class="py-3 my-4">
@@ -222,10 +231,17 @@
       </div>
 
   </main>
-  
+  <!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <span class="lang" key="cookie text">Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.</span> <a href="Privacy Policy.html" target="_blank" class="lang" key="cookie a">Узнать больше</a>
+     <button type="button" class="btn btn-primary btn-sm acceptcookies lang" key="cookie btn">
+         Окей
+     </button>
+ </div>
+ <!-- END Bootstrap-Cookie-Alert -->
 </body>
 
-
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
 <script src="js/translate.js"></script>
 <script src="js/cookie.js"></script>
 <script src="js/scroll.js"></script>
