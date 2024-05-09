@@ -1,3 +1,3 @@
-window.addEventListener("cookieAlertAccept", function() {
-    alert("cookies accepted")
-})
+//window.addEventListener("cookieAlertAccept", function() {
+    //console("cookies accepted")
+//})

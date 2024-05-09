@@ -171,10 +171,10 @@ table {
 }
 
 
-td, th {
+td{
   padding: 12px;
-  max-width: 150px; /* Максимальная ширина ячеек */
-  max-width: 150px; /* Максимальная ширина ячеек */
+  max-width: 400px; /* Максимальная ширина ячеек */
+  
 }
 
 td:nth-child(n + 2) {

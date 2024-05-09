@@ -11,7 +11,7 @@ function hideSpinner() {
     document.getElementById('loading-spinner').style.display = 'none';
 }
 
-// Функция для получения данных о топ-10 криптовалютах
+// Функция для получения данных о топ-100 криптовалютах
 async function fetchCryptoData() {
     // Показать спиннер
     showSpinner();
@@ -38,7 +38,7 @@ async function fetchCryptoData() {
     }
 }
 
-// Функция для отображения данных о топ-10 криптовалютах в таблице
+// Функция для отображения данных о топ-100 криптовалютах в таблице
 function displayCryptoData(data) {
     const tbody = document.getElementById('crypto-tbody');
 
@@ -81,7 +81,7 @@ function displayCryptoData(data) {
 
         // Создаем ячейку для цены
         const priceCell = document.createElement('td');
-        priceCell.textContent = `$${crypto.current_price.toFixed(2)}`;
+        priceCell.textContent = `${crypto.current_price.toFixed(2)}`;
 
         // Создаем ячейки для изменений с условным цветом
         const change1hCell = document.createElement('td');
@@ -89,12 +89,16 @@ function displayCryptoData(data) {
         const change7dCell = document.createElement('td');
 
         const setChangeColor = (change, cell) => {
-            const value = change?.toFixed(2);
-            cell.textContent = `${value}%`;
-            if (value > 0) {
-                cell.classList.add('positive');
-            } else if (value < 0) {
-                cell.classList.add('negative');
+            if (change !== undefined) {
+                const value = change.toFixed(2);
+                cell.textContent = `${value}%`;
+                if (value > 0) {
+                    cell.classList.add('positive');
+                } else if (value < 0) {
+                    cell.classList.add('negative');
+                }
+            } else {
+                cell.textContent = "Н/Д";
             }
         };
 
@@ -104,10 +108,10 @@ function displayCryptoData(data) {
 
         // Добавляем ячейки для рыночной капитализации, объема и предложения
         const marketCapCell = document.createElement('td');
-        marketCapCell.textContent = `$${crypto.market_cap?.toFixed(2)}`;
+        marketCapCell.textContent = `${crypto.market_cap?.toFixed(2)}`;
 
         const volume24hCell = document.createElement('td');
-        volume24hCell.textContent = `$${crypto.total_volume?.toFixed(2)}`;
+        volume24hCell.textContent = `${crypto.total_volume?.toFixed(2)}`;
 
         const supplyCell = document.createElement('td');
         supplyCell.textContent = `${crypto.circulating_supply?.toFixed(2)}`;
