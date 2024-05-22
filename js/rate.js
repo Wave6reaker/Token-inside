@@ -98,7 +98,7 @@ function displayCryptoData(data) {
                     cell.classList.add('negative');
                 }
             } else {
-                cell.textContent = "Н/Д";
+                cell.textContent = "--";
             }
         };
 

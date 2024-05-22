@@ -68,7 +68,7 @@ var arrLang = {
     'lastName': 'Last Name',
     'push': 'Send data',
 
-    'cookie text': 'This website uses cookies to ensure you get the best experience on our website.',
+    'cookie text': 'We use cookies and similar technologies.',
     'cookie a': 'Learn more',
     'cookie btn': 'Okay',
 
@@ -311,7 +311,7 @@ var arrLang = {
     'lastName': 'Фамилия',
     'push': 'Отправить данные',
 
-    'cookie text': 'Этот веб-сайт использует файлы cookie, чтобы обеспечить вам максимально эффективное использование нашего веб-сайта.',
+    'cookie text': 'Мы используем cookie и аналогичные технологии.',
     'cookie a': 'Узнать больше',
     'cookie btn': 'Окей',
 
