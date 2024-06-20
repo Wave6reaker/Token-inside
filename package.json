@@ -1,0 +1,11 @@
+{
+  "name": "token",
+  "version": "1.0.0",
+  "description": "<h1>Сервис для просмотра курса и конвертор криптовалюты </h1>\r <p>Мы предоставляем удобные инструменты для просмотра и отслеживания курсов различных криптовалют, а также для конвертации любой цифровой валюты.</p>\r <a href='https://tokeninside.ru'>Наш сайт</a>\r <br>\r <a href='https://www.figma.com/design/u8XBDcrjbvs9OAe8JC1Ro3/Token-inside?node-id=0-1&t=9f9vFlHNN4yopt3e-1'>Figma</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -106,7 +106,7 @@ var arrLang = {
     'read': 'Read',
 
     'convert': 'Cryptocurrency converter',
-    'crypto text': "Today's cryptocurrency prices",
+    'crypto text': "Current prices for cryptocurrencies",
 
     'contacts': 'My contacts: ',
 
@@ -339,7 +339,7 @@ var arrLang = {
     'read': 'Читать',
 
     'convert': 'Конвертер криптовалют',
-    'crypto text': 'Цены на криптовалюту сегодня',
+    'crypto text': 'Актуальные цены на криптовалюты',
 
     'contacts': 'Мои контакты: ',
 
